@@ -34,6 +34,32 @@ It declares compatibility with WooCommerce High-Performance Order Storage (HPOS)
 
 Source and issue tracker: the code lives at [github.com/wppoland/plogins-proof](https://github.com/wppoland/plogins-proof). Bug reports and patches are welcome there.
 
+== Atesto Pro ==
+
+Atesto Pro is a separate paid plugin that extends Atesto.
+
+Included in Atesto:
+
+* Real orders only
+* Privacy-safe
+* Choose the corner
+* Configurable timing
+* No jQuery, no layout shift
+
+Atesto Pro adds:
+
+* Recent-review popups
+* Privacy-safe
+* Minimum-rating filter
+* Review window
+* Cached feed, real data
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Atesto Pro** - [plogins.com/plogins-proof-pro/](https://plogins.com/plogins-proof-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-proof-pro/pricing/](https://plogins.com/plogins-proof-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-proof-pro/docs/](https://plogins.com/plogins-proof-pro/docs/)
+
 == Installation ==
 
 1. Install and activate WooCommerce 8.0 or later.
