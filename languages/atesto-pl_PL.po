@@ -24,8 +24,8 @@ msgstr "Atesto - Społeczny dowód słuszności dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: atesto.php
-msgid "https://plogins.com/plogins-proof/"
-msgstr "https://plogins.com/plogins-proof/"
+msgid "https://plogins.com/atesto/"
+msgstr "https://plogins.com/atesto/"
 
 #. Description of the plugin
 #: atesto.php

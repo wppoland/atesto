@@ -4,14 +4,14 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-proof-pro
+ * @package atesto-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Atesto Pro',
-    'url'        => 'https://plogins.com/plogins-proof-pro/pricing/',
+    'url'        => 'https://plogins.com/atesto-pro/pricing/',
     'sellable'   => true,
     'price_from' => 19,
     'currency'   => 'EUR',
