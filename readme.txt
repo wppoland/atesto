@@ -4,7 +4,7 @@ Tags: woocommerce, social proof, sales notification, popup, fomo
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,7 +32,7 @@ What you can configure under WooCommerce -> Atesto:
 
 It declares compatibility with WooCommerce High-Performance Order Storage (HPOS) and the Cart and Checkout blocks.
 
-Source and issue tracker: the code lives at [github.com/wppoland/plogins-proof](https://github.com/wppoland/plogins-proof). Bug reports and patches are welcome there.
+Source and issue tracker: the code lives at [github.com/wppoland/atesto](https://github.com/wppoland/atesto). Bug reports and patches are welcome there.
 
 == Atesto Pro ==
 
@@ -56,9 +56,9 @@ Atesto Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Atesto Pro** - [plogins.com/plogins-proof-pro/](https://plogins.com/plogins-proof-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-proof-pro/pricing/](https://plogins.com/plogins-proof-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-proof-pro/docs/](https://plogins.com/plogins-proof-pro/docs/)
+* **Atesto Pro** - [plogins.com/atesto-pro/](https://plogins.com/atesto-pro/)
+* **Compare editions and pricing** - [plogins.com/atesto-pro/pricing/](https://plogins.com/atesto-pro/pricing/)
+* **PRO documentation** - [plogins.com/atesto-pro/docs/](https://plogins.com/atesto-pro/docs/)
 
 == Installation ==
 
@@ -72,10 +72,10 @@ The free edition is not a trial and its features stay available without a time l
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-proof/docs/](https://plogins.com/plogins-proof/docs/)
-* **Plugin page**: [plogins.com/plogins-proof/](https://plogins.com/plogins-proof/)
-* **Source code**: [github.com/wppoland/plogins-proof](https://github.com/wppoland/plogins-proof)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-proof/issues](https://github.com/wppoland/plogins-proof/issues)
+* **Documentation**: [plogins.com/atesto/docs/](https://plogins.com/atesto/docs/)
+* **Plugin page**: [plogins.com/atesto/](https://plogins.com/atesto/)
+* **Source code**: [github.com/wppoland/atesto](https://github.com/wppoland/atesto)
+* **Bug reports and feature requests**: [github.com/wppoland/atesto/issues](https://github.com/wppoland/atesto/issues)
 
 
 = Does it show fake sales? =
@@ -121,6 +121,9 @@ Atesto does not contact any external service. The popups are built from your own
 Atesto is fully translatable and ships the `atesto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.3 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.2 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

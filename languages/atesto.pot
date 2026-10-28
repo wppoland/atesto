@@ -21,7 +21,7 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #: atesto.php
-msgid "https://plogins.com/plogins-proof/"
+msgid "https://plogins.com/atesto/"
 msgstr ""
 
 #. Description of the plugin
