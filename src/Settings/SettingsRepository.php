@@ -84,6 +84,7 @@ final class SettingsRepository
 
         $clean = [
             'enabled'             => ! empty($raw['enabled']),
+            'shop_only'           => ! empty($raw['shop_only']),
             'position'            => $position,
             'anonymous_name_text' => $anonName,
             'initial_delay'       => $this->clampInt($raw, 'initial_delay', 0, 120, (int) $defaults['initial_delay']),

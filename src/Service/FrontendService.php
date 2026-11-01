@@ -117,8 +117,20 @@ final class FrontendService implements HasHooks
      */
     private function shouldDisplay(): bool
     {
-        if (empty($this->settings->all()['enabled']) || is_admin()) {
+        $settings = $this->settings->all();
+        if (empty($settings['enabled']) || is_admin()) {
             return false;
+        }
+
+        if (! empty($settings['shop_only'])) {
+            $isShop = (function_exists('is_woocommerce') && is_woocommerce())
+                || (function_exists('is_cart') && is_cart())
+                || (function_exists('is_checkout') && is_checkout())
+                || is_front_page();
+
+            if (! $isShop) {
+                return false;
+            }
         }
 
         return true;

@@ -20,6 +20,9 @@ return [
     // Master switch.
     'enabled' => true,
 
+    // When on, popups only load on WooCommerce pages and the front page.
+    'shop_only' => true,
+
     // Screen corner: bottom-left | bottom-right | top-left | top-right.
     'position' => 'bottom-left',
 

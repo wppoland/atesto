@@ -156,6 +156,13 @@ final class Settings implements HasHooks
             (bool) $s['enabled'],
         );
 
+        $this->checkboxRow(
+            'shop_only',
+            __('Store pages only', 'atesto'),
+            __('Only show sales notifications on the front page, shop catalogue, product pages, cart and checkout. Keeps standard pages and blog posts clean and free of assets.', 'atesto'),
+            (bool) $s['shop_only'],
+        );
+
         $this->selectRow(
             'position',
             __('Screen corner', 'atesto'),
