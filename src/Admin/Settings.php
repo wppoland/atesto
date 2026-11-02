@@ -136,8 +136,40 @@ final class Settings implements HasHooks
         $this->proUpsell()->aside();
         echo '</div>';
 
+        $this->renderCompanionCard();
+
         $this->proUpsell()->cards();
         echo '</div>';
+    }
+
+    /**
+     * Cross-recommendation card for sister plugins (Badgevo Trust Badges).
+     * Strictly scoped to the Atesto settings screen per WordPress.org Guideline 11.
+     */
+    private function renderCompanionCard(): void
+    {
+        $isBadgevoActive = defined('\\Trust\\VERSION') || (function_exists('is_plugin_active') && (is_plugin_active('trust/badgevo.php') || is_plugin_active('badgevo/badgevo.php')));
+
+        ?>
+        <div class="proof-card proof-companion-card" style="max-width: 800px; margin-top: 24px; padding: 18px 22px; background: #fff; border: 1px solid #c3c4c7; box-shadow: 0 1px 1px rgba(0,0,0,.04);">
+            <h2 style="margin-top: 0; font-size: 15px;"><?php esc_html_e('Complementary integration: Badgevo - Trust Badges for WooCommerce', 'atesto'); ?></h2>
+            <p style="color: #50575e; line-height: 1.5;">
+                <?php esc_html_e('Pair recent sales popups with secure-checkout trust badges and payment icons on product pages and cart to reinforce customer confidence.', 'atesto'); ?>
+            </p>
+            <?php if ($isBadgevoActive) : ?>
+                <p style="color: #007017; font-weight: 600; margin-bottom: 0;">
+                    <span class="dashicons dashicons-yes-alt" style="vertical-align: text-bottom;"></span>
+                    <?php esc_html_e('Badgevo is active.', 'atesto'); ?>
+                </p>
+            <?php else : ?>
+                <p style="margin-bottom: 0;">
+                    <a href="<?php echo esc_url(admin_url('plugin-install.php?s=' . rawurlencode('Badgevo - Trust Badges for WooCommerce') . '&tab=search&type=term')); ?>" class="button button-secondary">
+                        <?php esc_html_e('Explore Badgevo Trust Badges', 'atesto'); ?> &rarr;
+                    </a>
+                </p>
+            <?php endif; ?>
+        </div>
+        <?php
     }
 
     /**
