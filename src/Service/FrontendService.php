@@ -81,7 +81,12 @@ final class FrontendService implements HasHooks
         );
 
         wp_localize_script('proof', 'proofData', [
-            'notifications' => $notifications,
+            // The exact order timestamp is for sorting on the server only: the popup shows
+            // the human "time ago", so ts never goes to the page beside a name and city.
+            'notifications' => array_map(
+                static fn ($item) => is_array($item) ? array_diff_key($item, ['ts' => true]) : $item,
+                $notifications,
+            ),
             'config'        => $this->frontConfig(),
             'i18n'          => [
                 'regionLabel' => __('Recent purchase', 'atesto'),
