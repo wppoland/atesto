@@ -113,8 +113,9 @@ Atesto does not contact any external service. The popups are built from your own
 
 == Screenshots ==
 
-1. A recent-sale popup in the corner of the storefront.
-2. The Atesto settings screen under WooCommerce -> Atesto.
+1. Recent purchase notification in the corner of the shop page.
+2. Settings under WooCommerce > Atesto: placement, popup content and timing.
+3. The notification on a phone.
 
 == Translations ==
 
