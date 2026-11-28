@@ -21,16 +21,16 @@ return [
     ],
     'features'   => [
         [
-            'en' => ['title' => 'Recent-review popups', 'desc' => 'Recent, approved product reviews mixed into the social-proof rotation alongside the recent-sale popups.'],
-            'pl' => ['title' => 'Powiadomienia o opiniach', 'desc' => 'Niedawne, zatwierdzone opinie o produktach mieszane do rotacji social proof obok powiadomień o sprzedaży.'],
+            'en' => ['title' => 'Recent-review popups', 'desc' => 'Recent, approved product reviews in the same rotation as the recent-sale popups, worded as a rating ("Sophie rated Harbor Leather Wallet ★★★★★"), never as a purchase.'],
+            'pl' => ['title' => 'Powiadomienia o opiniach', 'desc' => 'Niedawne, zatwierdzone opinie o produktach w tej samej rotacji co powiadomienia o sprzedaży, opisane jako ocena ("Sophie oceniła Harbor Leather Wallet ★★★★★"), nigdy jako zakup.'],
         ],
         [
             'en' => ['title' => 'Privacy-safe', 'desc' => 'Only a reviewer\'s first name and the product name are ever shown, never the review text or email.'],
             'pl' => ['title' => 'Bezpieczne dla prywatności', 'desc' => 'Pokazywane jest tylko imię recenzenta i nazwa produktu, nigdy treść opinii ani e-mail.'],
         ],
         [
-            'en' => ['title' => 'Minimum-rating filter', 'desc' => 'Only show reviews of N stars or more.'],
-            'pl' => ['title' => 'Filtr minimalnej oceny', 'desc' => 'Pokazuj tylko opinie o N gwiazdkach lub więcej.'],
+            'en' => ['title' => 'Minimum-rating filter', 'desc' => 'Only show reviews of N stars or more. A review without stars never passes the minimum.'],
+            'pl' => ['title' => 'Filtr minimalnej oceny', 'desc' => 'Pokazuj tylko opinie o N gwiazdkach lub więcej. Opinia bez gwiazdek nigdy nie przechodzi tego progu.'],
         ],
         [
             'en' => ['title' => 'Review window', 'desc' => 'A configurable maximum review count and maximum review age.'],

@@ -4,7 +4,7 @@ Tags: woocommerce, social proof, sales notification, popup, fomo
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -122,6 +122,9 @@ Atesto does not contact any external service. The popups are built from your own
 Atesto is fully translatable and ships the `atesto.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.8 =
+* The PRO notice on the settings screen describes each PRO feature the way the PRO plugin ships it.
 
 = 1.1.7 =
 * Popup items can carry a type. A review item (from Atesto Pro 1.0.18) reads "Sophie rated Hoodie" instead of "bought".
