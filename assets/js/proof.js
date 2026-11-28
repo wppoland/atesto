@@ -79,7 +79,8 @@
 			sentence += ( lead.textContent ? ' ' : '' ) + fromLabel() + ' ' + item.city;
 		}
 		if ( item.product ) {
-			sentence += ' ' + boughtLabel() + ' ' + item.product;
+			// A review item ("review") is worded as a rating, everything else as a sale.
+			sentence += ' ' + ( 'review' === item.type ? ratedLabel() : boughtLabel() ) + ' ' + item.product;
 		}
 
 		// Reset.
@@ -153,6 +154,10 @@
 
 	function boughtLabel() {
 		return i18n.bought || 'bought';
+	}
+
+	function ratedLabel() {
+		return i18n.rated || 'rated';
 	}
 
 	function toInt( value, fallback ) {

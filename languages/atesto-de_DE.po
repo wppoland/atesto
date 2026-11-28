@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Proof - Sales Notifications for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/atesto\n"
-"POT-Creation-Date: 2026-10-05T11:15:19+00:00\n"
+"POT-Creation-Date: 2026-11-28T09:16:15+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:24:00+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -93,36 +93,54 @@ msgstr "eine Lizenz, alle PRO-Funktionen"
 msgid "What %s adds"
 msgstr "Was %s ergänzt"
 
-#: src/Admin/Settings.php:52 src/Admin/Settings.php:119
-msgid "Atesto: Sales Notifications"
-msgstr "Atesto: Verkaufsbenachrichtigungen"
-
-#: src/Admin/Settings.php:53
+#: src/Admin/Settings.php:55 src/Admin/Settings.php:65
 msgid "Atesto"
 msgstr "Atesto"
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:64 src/Admin/Settings.php:131
+msgid "Atesto: Sales Notifications"
+msgstr "Atesto: Verkaufsbenachrichtigungen"
+
+#: src/Admin/Settings.php:135
 msgid ""
-"Show small popups of recent real purchases to build trust and urgency. Only a"
-" first name and city are ever shown, never full names, emails or addresses."
+"Show small popups of recent real purchases to build trust and urgency. Only "
+"a first name and city are ever shown, never full names, emails or addresses."
 msgstr ""
 "Zeige kleine Popups der letzten echten Käufe an, um Vertrauen und "
 "Dringlichkeit aufzubauen. Es werden immer nur Vorname und Stadt angezeigt, "
 "niemals vollständige Namen, E-Mails oder Adressen."
 
-#: src/Admin/Settings.php:133
+#: src/Admin/Settings.php:145
 msgid "Save changes"
 msgstr "Änderungen speichern"
 
-#: src/Admin/Settings.php:149
+#: src/Admin/Settings.php:167
+msgid "Complementary integration: Badgevo - Trust Badges for WooCommerce"
+msgstr ""
+
+#: src/Admin/Settings.php:169
+msgid ""
+"Pair recent sales popups with secure-checkout trust badges and payment icons "
+"on product pages and cart to reinforce customer confidence."
+msgstr ""
+
+#: src/Admin/Settings.php:174
+msgid "Badgevo is active."
+msgstr ""
+
+#: src/Admin/Settings.php:179
+msgid "Explore Badgevo Trust Badges"
+msgstr ""
+
+#: src/Admin/Settings.php:193
 msgid "General"
 msgstr "Allgemein"
 
-#: src/Admin/Settings.php:154
+#: src/Admin/Settings.php:198
 msgid "Enable Atesto"
 msgstr "Atesto aktivieren"
 
-#: src/Admin/Settings.php:155
+#: src/Admin/Settings.php:199
 msgid ""
 "Master switch. When off, no popups are loaded or rendered anywhere on the "
 "storefront."
@@ -130,52 +148,62 @@ msgstr ""
 "Hauptschalter. Wenn diese Option deaktiviert ist, werden nirgendwo in der "
 "Storefront Popups geladen oder gerendert."
 
-#: src/Admin/Settings.php:161
+#: src/Admin/Settings.php:205
+msgid "Store pages only"
+msgstr ""
+
+#: src/Admin/Settings.php:206
+msgid ""
+"Only show sales notifications on the front page, shop catalogue, product "
+"pages, cart and checkout. Keeps standard pages and blog posts clean and free "
+"of assets."
+msgstr ""
+
+#: src/Admin/Settings.php:212
 msgid "Screen corner"
 msgstr "Bildschirmecke"
 
-#: src/Admin/Settings.php:163
+#: src/Admin/Settings.php:214
 msgid "Bottom left"
 msgstr "Unten links"
 
-#: src/Admin/Settings.php:164
+#: src/Admin/Settings.php:215
 msgid "Bottom right"
 msgstr "Unten rechts"
 
-#: src/Admin/Settings.php:165
+#: src/Admin/Settings.php:216
 msgid "Top left"
 msgstr "Oben links"
 
-#: src/Admin/Settings.php:166
+#: src/Admin/Settings.php:217
 msgid "Top right"
 msgstr "Oben rechts"
 
-#: src/Admin/Settings.php:169
+#: src/Admin/Settings.php:220
 msgid "Which corner of the screen the popup slides in from."
 msgstr "Aus welcher Ecke des Bildschirms das Popup eingeblendet wird."
 
-#: src/Admin/Settings.php:182
+#: src/Admin/Settings.php:233
 msgid "What each popup shows"
 msgstr "Was jedes Popup zeigt"
 
-#: src/Admin/Settings.php:183
+#: src/Admin/Settings.php:234
 msgid ""
 "Each popup shows the buyer's first name, billing city, the product name and "
 "how long ago the purchase happened. Surnames, emails and full addresses are "
 "never shown."
 msgstr ""
-"In jedem Popup werden der Vorname des Käufers, der Ort der Rechnungsstellung,"
-" der Produktname und die Zeit angezeigt, vor der der Kauf getätigt wurde. "
-"Nachnamen, E-Mail-Adressen und vollständige Adressen werden niemals "
-"angezeigt."
+"In jedem Popup werden der Vorname des Käufers, der Ort der "
+"Rechnungsstellung, der Produktname und die Zeit angezeigt, vor der der Kauf "
+"getätigt wurde. Nachnamen, E-Mail-Adressen und vollständige Adressen werden "
+"niemals angezeigt."
 
-#: src/Admin/Settings.php:191
+#: src/Admin/Settings.php:242
 msgid "Fallback name"
 msgstr "Fallback-Name"
 
-#. translators: %s is the translated default word shown when an order has no
-#. first name.
-#: src/Admin/Settings.php:195
+#. translators: %s is the translated default word shown when an order has no first name.
+#: src/Admin/Settings.php:246
 #, php-format
 msgid ""
 "Shown in place of a first name when the order has none. Leave blank to use "
@@ -184,87 +212,92 @@ msgstr ""
 "Wird anstelle eines Vornamens angezeigt, wenn die Bestellung keinen enthält. "
 "Leer lassen, um den Standardwert „%s“ zu verwenden."
 
-#: src/Admin/Settings.php:196 src/Service/OrderFeed.php:130
+#: src/Admin/Settings.php:247 src/Service/OrderFeed.php:130
 msgid "Someone"
 msgstr "Jemand"
 
-#: src/Admin/Settings.php:210
+#: src/Admin/Settings.php:261
 msgid "Timing"
 msgstr "Timing"
 
-#: src/Admin/Settings.php:213
+#: src/Admin/Settings.php:264
 msgid "Initial delay (seconds)"
 msgstr "Anfängliche Verzögerung (Sekunden)"
 
-#: src/Admin/Settings.php:213
+#: src/Admin/Settings.php:264
 msgid ""
-"How long to wait after the page loads before the first popup appears. Default"
-" 5 seconds."
+"How long to wait after the page loads before the first popup appears. "
+"Default 5 seconds."
 msgstr ""
 "Wie lange nach dem Laden der Seite gewartet werden soll, bevor das erste "
 "Popup erscheint. Standardmäßig 5 Sekunden."
 
-#: src/Admin/Settings.php:214
+#: src/Admin/Settings.php:265
 msgid "Display time (seconds)"
 msgstr "Anzeigezeit (Sekunden)"
 
-#: src/Admin/Settings.php:214
+#: src/Admin/Settings.php:265
 msgid ""
 "How long each popup stays on screen before sliding away. Default 6 seconds."
 msgstr ""
 "Wie lange jedes Popup auf dem Bildschirm bleibt, bevor es verschwindet. "
 "Standardmäßig 6 Sekunden."
 
-#: src/Admin/Settings.php:215
+#: src/Admin/Settings.php:266
 msgid "Interval between popups (seconds)"
 msgstr "Intervall zwischen Popups (Sekunden)"
 
-#: src/Admin/Settings.php:215
+#: src/Admin/Settings.php:266
 msgid ""
 "Gap between one popup disappearing and the next appearing. Lower values show "
 "more popups; higher values feel calmer. Default 12 seconds."
 msgstr ""
-"Lücke zwischen dem Verschwinden eines Popups und dem Erscheinen des nächsten."
-" Niedrigere Werte zeigen mehr Popups an; Höhere Werte fühlen sich ruhiger an."
-" Standardmäßig 12 Sekunden."
+"Lücke zwischen dem Verschwinden eines Popups und dem Erscheinen des "
+"nächsten. Niedrigere Werte zeigen mehr Popups an; Höhere Werte fühlen sich "
+"ruhiger an. Standardmäßig 12 Sekunden."
 
-#: src/Admin/Settings.php:228
+#: src/Admin/Settings.php:279
 msgid "Example"
 msgstr "Beispiel"
 
-#: src/Admin/Settings.php:235
+#: src/Admin/Settings.php:286
 msgid "Alex from Berlin"
 msgstr "Alex aus Berlin"
 
-#: src/Admin/Settings.php:235
+#: src/Admin/Settings.php:286
 msgid "bought Merino Hoodie"
 msgstr "Merino Hoodie gekauft"
 
-#: src/Admin/Settings.php:236
+#: src/Admin/Settings.php:287
 msgid "2 hours ago"
 msgstr "Vor 2 Stunden"
 
-#: src/Admin/Settings.php:253
+#: src/Admin/Settings.php:304
 msgid "Enabled"
 msgstr "Aktiviert"
 
-#: src/Service/FrontendService.php:87
+#: src/Service/FrontendService.php:94
 msgid "Recent purchase"
 msgstr "Kürzlich gekauft"
 
-#: src/Service/FrontendService.php:88
+#: src/Service/FrontendService.php:95
 msgid "Dismiss notification"
 msgstr "Benachrichtigung verwerfen"
 
 #. translators: connects a name to a city, e.g. "Alex from Berlin".
-#: src/Service/FrontendService.php:90
+#: src/Service/FrontendService.php:97
 msgid "from"
 msgstr "von"
 
 #. translators: connects a buyer to a product, e.g. "bought Hoodie".
-#: src/Service/FrontendService.php:92
+#: src/Service/FrontendService.php:99
 msgid "bought"
 msgstr "gekauft"
+
+#. translators: connects a reviewer to a product, e.g. "rated Hoodie ★★★★★".
+#: src/Service/FrontendService.php:101
+msgid "rated"
+msgstr ""
 
 #. translators: %s: human-readable time difference, e.g. "2 hours".
 #: src/Service/OrderFeed.php:177
@@ -294,16 +327,16 @@ msgstr "Vor %s"
 #~ "Proof - Sales Notifications for WooCommerce requires WooCommerce to be "
 #~ "active."
 #~ msgstr ""
-#~ "Proof, Verkaufsbenachrichtigungen für WooCommerce erfordert, dass WooCommerce"
-#~ " aktiv ist."
+#~ "Proof, Verkaufsbenachrichtigungen für WooCommerce erfordert, dass "
+#~ "WooCommerce aktiv ist."
 
 #, php-format
 #~ msgid ""
-#~ "Shown in place of a first name when the order has none. Leave blank to use "
-#~ "the default, %s."
+#~ "Shown in place of a first name when the order has none. Leave blank to "
+#~ "use the default, %s."
 #~ msgstr ""
-#~ "Wird anstelle eines Vornamens angezeigt, wenn die Bestellung keinen enthält. "
-#~ "Lass das Feld leer, um den Standardwert %s zu verwenden."
+#~ "Wird anstelle eines Vornamens angezeigt, wenn die Bestellung keinen "
+#~ "enthält. Lass das Feld leer, um den Standardwert %s zu verwenden."
 
 #, php-format
 #~ msgid "od %d zł/rok"
