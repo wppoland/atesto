@@ -53,9 +53,11 @@ final class FrontendService implements HasHooks
         /**
          * Filters the privacy-safe notification feed before it is sent to the
          * browser. Add-ons (e.g. Proof Pro) append their own items here, using
-         * the same shape: {name, city, product, time, ts}.
+         * the same shape: {name, city, product, time, ts}, plus an optional type:
+         * "sale" (the default when missing) or "review", which the popup words as
+         * "rated" instead of "bought".
          *
-         * @param list<array{name:string,city:string,product:string,time:string,ts:int}> $notifications Feed built from recent WooCommerce orders.
+         * @param list<array{name:string,city:string,product:string,time:string,ts:int,type?:string}> $notifications Feed built from recent WooCommerce orders.
          * @param array<string, mixed>                                                    $settings      Resolved FREE settings.
          */
         $notifications = apply_filters('proof/notifications', $this->feed->notifications(), $settings);
@@ -95,6 +97,8 @@ final class FrontendService implements HasHooks
                 'from'        => __('from', 'atesto'),
                 /* translators: connects a buyer to a product, e.g. "bought Hoodie". */
                 'bought'      => __('bought', 'atesto'),
+                /* translators: connects a reviewer to a product, e.g. "rated Hoodie ★★★★★". */
+                'rated'       => __('rated', 'atesto'),
             ],
         ]);
     }
